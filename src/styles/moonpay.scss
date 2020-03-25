@@ -1,0 +1,36 @@
+.moonpay {
+	&__section {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		width: 500px;
+		border-radius: 0.75em;
+  		padding: $space-sm;
+		box-shadow: 0.275em 0.275em 1em 0 rgba(224,224,224,0.80);
+		&:hover {
+			box-shadow: 0.3em 0.3em 2em 0 rgba(224, 224, 224, 0.7);
+		}
+		@include bp(screen-sm) {
+			margin: 0;
+			width: 350px;
+			padding: $space-xs;
+		}
+	}
+	
+
+	&-container {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		outline: none;
+		z-index: 9999;
+
+		&-iframe {
+  			height: 100%;
+  			width: 100%;
+			min-height: 425px;
+		}
+	}
+}
