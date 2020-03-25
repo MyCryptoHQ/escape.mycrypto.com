@@ -92,6 +92,11 @@ module.exports = {
             template: './src/html/home.html',
             inject: true
         }),
+        new HtmlWebpackPlugin({
+            filename: './buy.html',
+            template: './src/html/buy.html',
+            inject: 'body',
+        }),
         new HtmlWebpackInlineSVGPlugin({
             runPreEmit: true,
         })
