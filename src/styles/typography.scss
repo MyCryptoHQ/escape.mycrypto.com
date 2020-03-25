@@ -1,0 +1,37 @@
+h1 {
+  font-family: $sans-serif;
+  font-size: $fs-plus-7;
+  font-weight: 600;
+  letter-spacing: $ls-shrink;
+  line-height: 1.1;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-family: $sans-serif;
+  font-size: $fs-plus-6;
+  font-weight: 600;
+  letter-spacing: $ls-shrink;
+  line-height: 1.1;
+  margin-bottom: 0.1em;
+}
+
+h3 {
+  font-family: $serif;
+  font-size: $fs-plus-4;
+  font-weight: 400;
+  letter-spacing: $ls-expand;
+  line-height: 1.45;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: .75em;
+  line-height: 1.6;
+}
+
+.serif {
+  font-family: $serif;
+  letter-spacing: $ls-expand;
+}

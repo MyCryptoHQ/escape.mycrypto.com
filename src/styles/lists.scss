@@ -1,0 +1,42 @@
+.list__section {
+
+}
+
+.list__section .list__item {
+  margin-bottom: $space-lg;
+}
+
+.list__wrapper {
+  list-style: none;
+  counter-reset: custom-counter;
+  max-width: 23em;
+  display: flex;
+  margin-right: 0;
+  margin-left: auto;
+  flex-direction: column;
+  @include bp(screen-md) {
+    margin: 0 1em 0 2em;
+    max-width: 100%;
+  }
+}
+.list__item {
+  counter-increment: custom-counter;
+  margin-bottom: 5em;
+  font-size: $fs-plus-1;
+}
+.list__item:before {
+  content: counter(custom-counter) ".";
+  float: left;
+  font-family: $serif;
+  font-size: 2.75em;
+  line-height: 1;
+  margin-left: -3.5rem;
+  margin-right: 0.5rem;
+  margin-top: -1.4rem;
+}
+
+.list__item a {
+  font-weight: 600;
+  color: $blue;
+  text-decoration: underline;
+}

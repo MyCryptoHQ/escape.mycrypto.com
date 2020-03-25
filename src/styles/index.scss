@@ -1,0 +1,123 @@
+$black:      #000000;
+$white:      #ffffff;
+$red:        #ed4938;
+$orange:     #f59054;
+$yellow:     #efc337;
+$teal:       #2fc8ac;
+$teal-light: #97e2d6;
+$blue:       #4CADF9;
+$blue-dark:  #5f85da;
+$purple:     #ad7af6;
+
+$fs-plus-7: 5.25em;    // 84
+$fs-plus-6: 4.75em;    // 76
+$fs-plus-5: 3.375em;   // 54
+$fs-plus-4: 1.75em;    // 28
+$fs-plus-3: 1.5em;     // 24
+$fs-plus-2: 1.25em;    // 20
+$fs-plus-1: 1.125em;   // 18
+$fs-base:   1.0em;     // 16
+$fs-sm:     0.875em;
+
+$space-xxl: 10rem;     // 160
+$space-xl:  6rem;      // 96
+$space-lg:  4rem;      // 64
+$space-md:  3rem;      // 48
+$space:     2rem;      // 32
+$space-sm:  1rem;      // 16
+$space-xs:  0.5rem;    // 8
+
+$ls-shrink: -0.05em;   // -3
+$ls-expand:  0.003em;  // 3
+
+$shadow: 0.275em 0.275em 1.5em 0 rgba(50, 50, 50, 0.1);
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./../assets/work-sans-regular.woff2') format('woff2'),
+       url('./../assets/work-sans-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('./../assets/work-sans-500.woff2') format('woff2'),
+       url('./../assets/work-sans-500.woff') format('woff');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('./../assets/work-sans-600.woff2') format('woff2'),
+       url('./../assets/work-sans-600.woff') format('woff');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('./../assets/work-sans-700.woff2') format('woff2'),
+       url('./../assets/work-sans-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libre Baskerville'), local('LibreBaskerville-Regular'),
+       url('./../assets/libre-baskerville-regular.woff2') format('woff2'),
+       url('./../assets/libre-baskerville-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'),
+       url('./../assets/libre-baskerville-700.woff2') format('woff2'),
+       url('./../assets/libre-baskerville-700.woff') format('woff');
+}
+
+$sans-serif: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$serif: 'Libre Baskerville', -apple-system, BlinkMacSystemFont, serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+@mixin bp($point) {
+  @if $point == screen-sm {
+    @media (max-width: 45em) {
+      @content;
+    }
+  } @else if $point == screen-sm-min {
+    @media (min-width: 45.001em) {
+      @content;
+    }
+  } @else if $point == screen-md {
+    @media (max-width: 62em) {
+      @content;
+    }
+  } @else if $point == screen-lg {
+    @media (max-width: 82em) {
+      @content;
+    }
+  } @else if $point == screen-xl {
+    @media (max-width: 93em) {
+      @content;
+    }
+  } @else if $point == screen-xl-min {
+    @media (min-width: 93em) {
+      @content;
+    }
+  }
+}
+
+@import 'reboot';
+@import 'typography';
+@import 'global';
+@import 'cards-buy';
+@import 'cards-links';
+@import 'scale';
+@import 'lists';
+@import 'media';
+@import 'moonpay';
