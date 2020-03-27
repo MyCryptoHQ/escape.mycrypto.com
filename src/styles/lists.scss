@@ -39,4 +39,10 @@
   font-weight: 600;
   color: $blue;
   text-decoration: underline;
+  transition: ease all 250ms;
+  &:hover {
+    color: darken($blue, 10%);
+    border-color: darken($blue, 10%);
+    transition: ease all 250ms;
+  }
 }

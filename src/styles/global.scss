@@ -125,5 +125,6 @@ section.subhead__section {
     border-color: darken($blue, 10%);
     font-size: 1.27em;
     transition: ease all 250ms;
+    transform: scale(1.01);
   }
 }
