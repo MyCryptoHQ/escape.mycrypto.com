@@ -19,7 +19,7 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent;
   font-size: 16px;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     font-size: 15px;
   }
   @include bp(screen-xl-min) {

@@ -1,5 +1,7 @@
 .list__section {
-
+  @include bp(screen-sm) {
+    margin-top: -$space-md;
+  }
 }
 
 .list__section .list__item {
@@ -13,7 +15,7 @@
   display: flex;
   margin: 0 0 0 auto;
   flex-direction: column;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     margin: 0 1em 0 2em;
     max-width: 100%;
   }

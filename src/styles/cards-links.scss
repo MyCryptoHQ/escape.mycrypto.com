@@ -7,8 +7,8 @@
   margin: $space-sm auto;
   position: relative;
   transition: 250ms ease all;
-  @include bp(screen-md) {
-    padding: $space $space-md $space $space;
+  @include bp(screen-sm) {
+    padding: 1.5em 3em 1.5em 1.5em;
     margin: $space-sm auto;
   }
 }
@@ -21,7 +21,7 @@
   letter-spacing: $ls-shrink;
   line-height: 1;
   margin: 0 0 $space-xs;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     margin-bottom: .25em;
     font-size: 2.7em;
   }
@@ -36,13 +36,13 @@
 
 .linkcard--half {
   display: flex;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     flex-direction: column;
   }
   .linkcard {
     margin-right: $space;
     flex: 1;
-    @include bp(screen-md) {
+    @include bp(screen-sm) {
       margin-right: 0;
       margin-left: 0;
     }
@@ -50,7 +50,7 @@
   .linkcard + .linkcard {
     margin-right: 0;
     margin-left: $space;
-    @include bp(screen-md) {
+    @include bp(screen-sm) {
       margin-right: 0;
       margin-left: 0;
     }
@@ -69,7 +69,7 @@
   transform: translate(0,-50%);
   transition: 250ms ease all;
   width: 3em;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     right: $space-xs;
   }
 }

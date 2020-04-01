@@ -11,6 +11,7 @@
     margin: .5em auto;
     @include bp(screen-sm) {
       padding: $space-xs;
+      width: 100%;
     }
   }
 

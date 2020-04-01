@@ -1,7 +1,7 @@
 .buy__section {
   display: flex;
   text-align: center;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     flex-direction: column;
   }
 }
@@ -16,7 +16,8 @@
   flex-direction: column;
   justify-content: space-between;
   background: $white;
-  @include bp(screen-md) {
+  text-align: left;
+  @include bp(screen-sm) {
     margin: 0;
     padding: $space;
   }
@@ -25,7 +26,7 @@
 .buy__card + .buy__card {
   margin-right: 0;
   margin-left: $space-md;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     margin: $space 0;
   }
 }

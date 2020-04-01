@@ -87,11 +87,11 @@ $serif: 'Libre Baskerville', -apple-system, BlinkMacSystemFont, serif, 'Apple Co
 
 @mixin bp($point) {
   @if $point == screen-sm {
-    @media (max-width: 45em) {
+    @media (max-width: 52em) {
       @content;
     }
   } @else if $point == screen-sm-min {
-    @media (min-width: 45.001em) {
+    @media (min-width: 52.001em) {
       @content;
     }
   } @else if $point == screen-md {

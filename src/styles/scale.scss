@@ -42,7 +42,7 @@
   left: -10em;
   top: 1em;
   z-index: -10;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     left: -20em;
     top: .5em;
   }
@@ -50,8 +50,8 @@
 
 .scale-text__section {
   @extend .serif;
-  @include bp(screen-md) {
-    margin-top: $space;
+  @include bp(screen-sm) {
+    margin-top: 0;
   }
 }
 

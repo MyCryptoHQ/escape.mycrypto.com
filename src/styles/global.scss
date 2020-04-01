@@ -21,7 +21,7 @@
 .space {
   display: block;
   height: $space-xl;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     height: $space-xxl;
   }
 }
@@ -29,7 +29,7 @@
 .space--sm {
   display: block;
   height: $space-lg;
-  @include bp(screen-md) {
+  @include bp(screen-sm) {
     height: $space-xl;
   }
 }
@@ -59,6 +59,10 @@ section.twentytwenty__section {
   margin-right: auto;
   margin-bottom: 3em;
   padding-right: 15em;
+  @include bp(screen-sm) {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 section.subhead__section {
@@ -76,7 +80,7 @@ section.subhead__section {
   max-width: 38em;
   .escape__list-subtitle {
     margin-bottom: 0.3em;
-    @include bp(screen-md) {
+    @include bp(screen-sm) {
       margin-bottom: 0.5em;
       font-size: 1.25em;
     }
@@ -86,8 +90,8 @@ section.subhead__section {
     font-size: $fs-plus-6;
     line-height: .9;
     max-width: 8em;
-    @include bp(screen-md) {
-      margin-bottom: $space-lg;
+    @include bp(screen-sm) {
+      margin-bottom: 0;
       font-size: 3.3em;
     }
   }
@@ -163,5 +167,11 @@ section.subhead__section {
   .header__logo {
     margin: $space-sm auto $space-xl;
     display: block;
+  }
+}
+
+.space + .space {
+  @include bp(screen-sm) {
+    display: none;
   }
 }
