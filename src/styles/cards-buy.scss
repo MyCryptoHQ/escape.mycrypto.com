@@ -1,5 +1,6 @@
 .buy__section {
   display: flex;
+  text-align: center;
   @include bp(screen-md) {
     flex-direction: column;
   }

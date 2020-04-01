@@ -94,6 +94,11 @@ section.subhead__section {
   margin-bottom: $space-md;
 }
 
+.learn__subtitle {
+  text-align: center;
+  max-width: 40em;
+  margin: -$space-md auto $space-sm;
+}
 
 .twitter__item {
   box-shadow: $shadow;
