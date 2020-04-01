@@ -31,3 +31,18 @@
     }
   }
 }
+
+.moonpay_copy {
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 40em;
+  border-radius: 0.75em;
+  margin: .5em auto;
+
+  font-size: 80%;
+  font-style: italic;
+  color: $grey;
+}
