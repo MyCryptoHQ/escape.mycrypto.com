@@ -15,4 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
 		currentSrc += '&currencyCode=' + currencyCode + '&walletAddress=' + walletAddress + '&signature=' + encodeURIComponent(signature)
 	}
 	moonpayIFrame.src = currentSrc
+
 })
