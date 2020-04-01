@@ -11,8 +11,7 @@
   counter-reset: custom-counter;
   max-width: 23em;
   display: flex;
-  margin-right: 0;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   flex-direction: column;
   @include bp(screen-md) {
     margin: 0 1em 0 2em;

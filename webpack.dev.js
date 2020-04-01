@@ -95,7 +95,22 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: './buy.html',
             template: './src/html/buy.html',
-            inject: 'body',
+            inject: true,
+        }),
+        new HtmlWebpackPlugin({
+            filename: './buy-btc.html',
+            template: './src/html/buy-btc.html',
+            inject: true,
+        }),
+        new HtmlWebpackPlugin({
+            filename: './buy-eth.html',
+            template: './src/html/buy-eth.html',
+            inject: true,
+        }),
+        new HtmlWebpackPlugin({
+            filename: './learn.html',
+            template: './src/html/learn.html',
+            inject: true,
         }),
         new HtmlWebpackInlineSVGPlugin({
             runPreEmit: true,

@@ -37,9 +37,7 @@
 .header {
   text-align: center;
   max-width: 50em;
-  margin: $space-xxl auto $space-xl;
-  padding-left: $space;
-  padding-right: $space;
+  margin: $space-xxl auto 0;
 }
 
 .main__container {
@@ -56,7 +54,7 @@
 }
 
 section.subhead__section {
-  max-width: 40em;
+  max-width: 45em;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -77,7 +75,7 @@ section.subhead__section {
     }
   }
   .escape__list-title {
-    margin-bottom: $space-xxl;
+    margin-bottom: $space;
     font-size: $fs-plus-6;
     line-height: .9;
     max-width: 8em;
@@ -126,5 +124,32 @@ section.subhead__section {
     font-size: 1.27em;
     transition: ease all 250ms;
     transform: scale(1.01);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: $space-lg;
+}
+.footer__img-wrapper {
+
+}
+.footer__img {
+  max-width: 8em;
+  height: auto;
+}
+
+.header__logo {
+  max-width: 12em;
+  height: auto;
+}
+
+.page--buy {
+  .header {
+    margin-top: 0
+  }
+  .header__logo {
+    margin: $space-sm auto $space-xl;
+    display: block;
   }
 }
